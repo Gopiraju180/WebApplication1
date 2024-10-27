@@ -14,5 +14,11 @@ namespace WebApplication1.Controllers
             var result = "DotNet Developers";
             return result;
         }
+        [HttpPost]
+        [Route("insertData")]
+        public int Insert(int a, int b)
+        {
+            return a + b;
+        }
     }
 }
